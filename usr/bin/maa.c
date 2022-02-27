@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-#include "ccolors.h"
+#include "colors.h"
 int main() {
 	char command[200];
 	printf(GRN "Hi, this is my well, not so awesome command line app. Commands: \"rand\" which prints a random number between 2 numbers, \"pasgen\" which is an undesired operation. \"time\" which prints the time. \"fileadd\" which adds a file.\n");
