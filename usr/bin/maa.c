@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-#include <ccolors.h>
+#include "ccolors.h"
 int main() {
 	char command[200];
 	printf(GRN "Hi, this is my well, not so awesome command line app. Commands: \"rand\" which prints a random number between 2 numbers, \"pasgen\" which is an undesired operation. \"time\" which prints the time. \"fileadd\" which adds a file.\n");
@@ -62,10 +62,7 @@ int main() {
 			char *content[1000];
 			printf(MAG "What is the name of your file?\n");
 			scanf("%s", &name);
-			printf("What is the file extension of your file?\n");
-			scanf("%s", &ex);
-			strcat(&name, ".");
-			strcat(&name, &ex);
+			strcat(&name, ".txt");
 			printf("What is the content of the file?\n");
 			scanf("%s", &content);
 			FILE *f_ptr;
